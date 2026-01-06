@@ -1,15 +1,15 @@
-package thispoo;
-public class Car {
+package Heritage;
 
-    private String brand;
-    private float currentSpeed;
+public class Vehicle {
 
-    public Car(String brand, float currentSpeed) {
-        setBrand(brand);
+    protected String brand;
+    protected float currentSpeed;
+
+    public Vehicle(String brand, float currentSpeed) {
+        this.brand = brand;
         setCurrentSpeed(currentSpeed);
     }
 
-    // Getters
     public String getBrand() {
         return brand;
     }
@@ -18,7 +18,6 @@ public class Car {
         return currentSpeed;
     }
 
-    // Setters avec règles
     public void setBrand(String brand) {
         if (brand != null && !brand.isEmpty()) {
             this.brand = brand;
@@ -31,7 +30,6 @@ public class Car {
         }
     }
 
-    // Méthodes métier
     public void accelerate(float delta) {
         if (delta > 0) {
             setCurrentSpeed(this.currentSpeed + delta);
@@ -44,3 +42,4 @@ public class Car {
         }
     }
 }
+

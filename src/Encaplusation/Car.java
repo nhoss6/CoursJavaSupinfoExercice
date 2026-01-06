@@ -1,4 +1,5 @@
-package thispoo;
+package Encaplusation;
+
 public class Car {
 
     private String brand;
@@ -44,3 +45,4 @@ public class Car {
         }
     }
 }
+

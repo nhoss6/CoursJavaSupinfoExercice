@@ -1,4 +1,4 @@
-package thispoo;
+package Encaplusation;
 
 public class Main {
 
@@ -17,4 +17,3 @@ public class Main {
         // car.brand = "";
     }
 }
-

@@ -1,4 +1,4 @@
-package thispoo;
+package Heritage;
 
 public class Main {
 
@@ -7,14 +7,9 @@ public class Main {
         Car car = new Car("Toyota", 50);
 
         car.accelerate(30);
-        car.brake(100);
+        car.brake(20);
 
         System.out.println("Marque : " + car.getBrand());
         System.out.println("Vitesse : " + car.getCurrentSpeed());
-
-        // Accès direct interdit
-        // car.currentSpeed = -20;
-        // car.brand = "";
     }
 }
-
